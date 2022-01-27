@@ -1,0 +1,117 @@
+nav ul{
+    margin-right: 20px;
+    background: #0082e6;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: rgb(225, 255, 255);
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: 'Lobster', cursive;
+}
+a.active, a:hover{
+    background: rgb(0, 0, 255);
+}
+h2{
+    color: rgb(2, 2, 92);
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    color: rgb(2, 2, 92);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    background: rgba(2, 34, 49, 0.164);
+}
+
+.encabezado{
+    margin: 0%;
+    padding: 0%;
+}
+   
+
+.gridContainer{
+	display: grid;
+	grid-template-areas: 
+	"textoInformativo textoInformativo"
+    "imgTxtInformativo imgTxtInformativo2";
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 100px 1fr auto 400px;
+}
+
+section.encabezado{
+	grid-area: encabezado;
+}
+
+section.textoInformativo{
+	grid-area: textoInformativo;
+}
+
+section.imgTxtInformativo{
+	grid-area: imgTxtInformativo;
+}
+section.imgTxtInformativo2{
+	grid-area: imgTxtInformativo2;
+}
+footer{
+	grid-area: footer;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 20px; /* box model */
+}
+
+/* medias queries */
+/*vista desktop */
+@media only screen and (min-width:1240px){
+	.encabezado{
+		font-size: 40px;
+		text-align: center;
+		color: blue;
+	}
+}
+/* vista entre desktop y mobile */
+@media only screen and (min-width:768px) and (max-width:1239px){
+	.gridContainer{
+        display: grid;
+        grid-template-areas: 
+        "textoInformativo textoInformativo"
+        "imgTxtInformativo imgTxtInformativo2";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 1fr auto 400px;
+
+}
+}
+.sectionFlex{
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	height: 50%;
+	width: 100%;
+	align-items: stretch;
+	flex-wrap: wrap;
+	align-content: stretch;
+}
+.sectionFlex p {width: 25%; padding: 30px; margin: 20px;}
+.filas{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+img{
+    width: 100%;
+    
+}
+.column{
+    flex: 25%;
+    padding: 5px;
+}
+.column img{
+    margin-top: 5px;
+}
