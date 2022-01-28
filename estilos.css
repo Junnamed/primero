@@ -115,3 +115,13 @@ img{
 .column img{
     margin-top: 5px;
 }
+/* Transiciones */
+.encabezado{
+    transition: all 2s
+}
+.encabezado{
+     width: 70%;
+     background: rgba(2, 34, 49, 0.164);
+}
+
+
